@@ -8,12 +8,16 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-50: oklch(98.7% 0.022 95.277);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-bold: 700;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-header: #49bbbd;
+    --font-Poppins: "Poppins";
   }
 }
 @layer base {
@@ -165,32 +169,98 @@
   }
 }
 @layer utilities {
-  .mx-auto {
-    margin-inline: auto;
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-8\.5 {
+    margin-top: calc(var(--spacing) * 8.5);
+  }
+  .mt-13 {
+    margin-top: calc(var(--spacing) * 13);
+  }
+  .mt-27 {
+    margin-top: calc(var(--spacing) * 27);
+  }
+  .mt-27\.75 {
+    margin-top: calc(var(--spacing) * 27.75);
+  }
+  .mt-55 {
+    margin-top: calc(var(--spacing) * 55);
+  }
+  .mt-55\.5 {
+    margin-top: calc(var(--spacing) * 55.5);
+  }
+  .mt-\[111px\] {
+    margin-top: 111px;
+  }
+  .mr-6 {
+    margin-right: calc(var(--spacing) * 6);
   }
   .mr-6\.5 {
     margin-right: calc(var(--spacing) * 6.5);
   }
+  .mr-31 {
+    margin-right: calc(var(--spacing) * 31);
+  }
   .mr-31\.5 {
     margin-right: calc(var(--spacing) * 31.5);
+  }
+  .ml-20 {
+    margin-left: calc(var(--spacing) * 20);
   }
   .ml-20\.25 {
     margin-left: calc(var(--spacing) * 20.25);
   }
+  .ml-29 {
+    margin-left: calc(var(--spacing) * 29);
+  }
+  .ml-29\.5 {
+    margin-left: calc(var(--spacing) * 29.5);
+  }
+  .ml-30 {
+    margin-left: calc(var(--spacing) * 30);
+  }
   .ml-30\.25 {
     margin-left: calc(var(--spacing) * 30.25);
+  }
+  .ml-33 {
+    margin-left: calc(var(--spacing) * 33);
   }
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
+  .h-\[890px\] {
+    height: 890px;
+  }
   .min-h-250 {
     min-height: calc(var(--spacing) * 250);
+  }
+  .w-130 {
+    width: calc(var(--spacing) * 130);
+  }
+  .w-150 {
+    width: calc(var(--spacing) * 150);
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .list-none {
     list-style-type: none;
   }
+  .items-center {
+    align-items: center;
+  }
   .justify-between {
     justify-content: space-between;
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
@@ -199,20 +269,61 @@
     border-bottom-right-radius: 30%;
     border-bottom-left-radius: 30%;
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .bg-\[\#49bbbd\] {
     background-color: #49bbbd;
+  }
+  .bg-header {
+    background-color: var(--color-header);
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
+  }
+  .font-Poppins {
+    font-family: var(--font-Poppins);
   }
   .text-\[22px\] {
     font-size: 22px;
   }
+  .text-\[24px\] {
+    font-size: 24px;
+  }
+  .text-\[54px\] {
+    font-size: 54px;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-\[\#F48C06\] {
+    color: #F48C06;
+  }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-white {
     color: var(--color-white);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+}
+@layer base {
+  header {
+    background-color: var(--color-header);
   }
 }
 @layer utilities {
@@ -228,8 +339,9 @@
   .header-links {
     border-radius: 25px;
     background-color: var(--color-amber-50);
-    padding-inline: calc(var(--spacing) * 8);
-    padding-block: calc(var(--spacing) * 2);
+    padding-inline: calc(var(--spacing) * 10);
+    padding-block: calc(var(--spacing) * 3);
+    color: #5B5B5B;
   }
   .header-links:hover {
     background-color: #7fcecf;
@@ -244,6 +356,20 @@
     font-size: 22px;
   }
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -251,6 +377,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-font-weight: initial;
+      --tw-outline-style: solid;
       --tw-duration: initial;
     }
   }
