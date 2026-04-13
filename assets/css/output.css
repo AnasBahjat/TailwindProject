@@ -1,4 +1,5 @@
 /*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com */
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -6,6 +7,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-50: oklch(98.7% 0.022 95.277);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -158,4 +164,94 @@
     display: none !important;
   }
 }
-@layer utilities;
+@layer utilities {
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mr-6\.5 {
+    margin-right: calc(var(--spacing) * 6.5);
+  }
+  .mr-31\.5 {
+    margin-right: calc(var(--spacing) * 31.5);
+  }
+  .ml-20\.25 {
+    margin-left: calc(var(--spacing) * 20.25);
+  }
+  .ml-30\.25 {
+    margin-left: calc(var(--spacing) * 30.25);
+  }
+  .flex {
+    display: flex;
+  }
+  .min-h-250 {
+    min-height: calc(var(--spacing) * 250);
+  }
+  .list-none {
+    list-style-type: none;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .rounded-b-\[30\%\] {
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+  }
+  .bg-\[\#49bbbd\] {
+    background-color: #49bbbd;
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .text-\[22px\] {
+    font-size: 22px;
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+}
+@layer utilities {
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  .row-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-links {
+    border-radius: 25px;
+    background-color: var(--color-amber-50);
+    padding-inline: calc(var(--spacing) * 8);
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .header-links:hover {
+    background-color: #7fcecf;
+    color: var(--color-white);
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 115ms;
+    transition-duration: 115ms;
+  }
+  .header-text {
+    font-size: 22px;
+  }
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-duration: initial;
+    }
+  }
+}
