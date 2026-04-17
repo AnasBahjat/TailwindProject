@@ -4,6 +4,11 @@
   --color-header: #49bbbd;
   --color-header-text: #ffffff;
   --font-Poppins: "Poppins";
+  --h3-color: #595959;
+  --font-Nunito-sans: "Nunito Sans";
+  --h3-text-size: 24px;
+  --p-text-size: 20px;
+  --color-items_bg: #dbf1f2;
 }
 
 @layer base {
@@ -31,5 +36,13 @@
 
   .header-text {
     @apply text-[22px];
+  }
+
+  .h3-text-color {
+    @apply text-[#595959];
+  }
+
+  .p-text-color {
+    @apply text-[#545567];
   }
 }

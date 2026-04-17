@@ -12,7 +12,7 @@
       rel="stylesheet" />
   </head>
   <body>
-    <header class="bg-header pt-2 min-h-250 rounded-b-[30%]">
+    <header class="bg-header pt-2 min-h-fit rounded-b-[30%]">
       <!--Header Start..-->
       <div class="head p-5 row justify-between ml-30.25 mr-31.5">
         <img src="./assets/imgs/header/header-logo.png" alt="" />
@@ -37,8 +37,8 @@
       </div>
 
       <!--Header Content Start-->
-      <div class="flex">
-        <div class="border ml-30.25 mt-55.5 text-white">
+      <section class="flex ml-30.25 mr-31.5">
+        <div class="mt-55.5 text-white">
           <h2 class="text-[54px] w-150 font-bold">
             <span class="text-[#F48C06]">Studying</span> Online is now much
             easier
@@ -57,13 +57,97 @@
             </div>
           </div>
         </div>
-        <div class="border mt-27.75">
-          <img
-            class="h-[890px]"
-            src="./assets/imgs/header/header-girl-image.png"
-            alt="" />
+        <div class="mt-27.75 hidden">
+          <img src="./assets/imgs/header/header-girl-image.png" alt="" />
         </div>
-      </div>
+
+        <div class="relative flex h-fit ml-18.5">
+          <!--Girl Image Start-->
+          <img
+            class="ml-50 mt-20 w-136 h-223"
+            src="./assets/imgs/header/girl-no-bg.png"
+            alt="" />
+          <!--Girl Image End-->
+
+          <!--Pink Color Start-->
+          <div class="absolute z-10 mt-60.25">
+            <img
+              class="ml-182.5"
+              src="./assets/imgs/header/pink-header-icon.svg"
+              alt="" />
+            <!--Pink Color Icon End-->
+
+            <!--Calender Part Start-->
+            <div
+              class="row py-3.75 px-7 gap-6 bg-items_bg w-fit rounded-[20px]">
+              <div class="">
+                <img src="./assets/imgs/header/calender-header.svg" alt="" />
+              </div>
+              <div class="">
+                <h3
+                  class="font-Nunito-sans font-bold text-[24px] h3-text-color">
+                  250k
+                </h3>
+                <p
+                  class="font-Nunito-sans text-[20px] font-semibold p-text-color">
+                  Assisted Student
+                </p>
+              </div>
+            </div>
+            <!--Calender Part End-->
+
+            <!--Message Part Start-->
+            <div
+              class="row mt-23.75 py-3.75 px-7 gap-6 bg-items_bg w-fit rounded-[20px]">
+              <div class="">
+                <img src="./assets/imgs/header/email-notification.svg" alt="" />
+              </div>
+              <div class="">
+                <h3
+                  class="font-Nunito-sans font-bold text-[24px] h3-text-color">
+                  Congratulations
+                </h3>
+                <p
+                  class="font-Nunito-sans text-[20px] font-semibold p-text-color">
+                  Your admission completed
+                </p>
+              </div>
+            </div>
+            <!--Message Part End-->
+
+            <!--Person Details Start-->
+            <div class="bg-items_bg mt-7.5 w-fit rounded-[20px]">
+              <div class="row gap-5.75">
+                <div class="relative flex mt-6.5 ml-6.5">
+                  <img src="./assets/imgs/header/header-person.svg" alt="" />
+                  <img
+                    class="absolute top-8 left-10"
+                    src="./assets/imgs/header/online-status.svg"
+                    alt="" />
+                </div>
+                <div class="mt-5 mr-7">
+                  <h3
+                    class="text-[24px] h3-text-color font-bold font-Nunito-sans leading-[1.8] tracking-[0.02em]">
+                    User Experience Class
+                  </h3>
+                  <p
+                    class="text-[20px] p-text-color font-Nunito-sans font-semiboldl text-line-props">
+                    Today at 12:00 PM
+                  </p>
+                </div>
+              </div>
+              <div class="row-center pt-4.75 pb-7">
+                <a
+                  class="rounded-[80px] bg-[#d8587e] text-[20px] text-white px-11.75 py-3"
+                  href="#"
+                  >Join Now</a
+                >
+              </div>
+            </div>
+            <!--Person Details End-->
+          </div>
+        </div>
+      </section>
       <!--Header Content End-->
     </header>
   </body>
