@@ -15,8 +15,14 @@
 }
 
 @layer base {
-  header {
+  /*header {
     background-color: var(--color-header);
+  }*/
+}
+
+@layer components {
+  .blog-header-nav {
+    @apply text-[22px] font-Poppins tracking-[2%] text-[#5B5B5B];
   }
 }
 
@@ -63,9 +69,9 @@
     font-family: var(--font-Buenos-Aires);
   }
 
-  .temp-item {
+  /*.temp-item {
     @apply w-[calc((100% - 60px) / 3)] bg-white ;
-  }
+  }*/
 }
 
 @font-face {
