@@ -1,14 +1,17 @@
 @import "tailwindcss";
 
 @theme {
+  --color-body-color: #f9f9fb;
   --color-header: #49bbbd;
   --color-header-text: #ffffff;
   --font-Poppins: "Poppins";
   --h3-color: #595959;
   --font-Nunito-sans: "Nunito Sans";
+  --font-Buenos-Aires: "Buenos Aires";
   --h3-text-size: 24px;
   --p-text-size: 20px;
   --color-items_bg: #dbf1f2;
+  --color-success-details: linearGradient(to right, #136cb5, #49bbbd);
 }
 
 @layer base {
@@ -45,4 +48,36 @@
   .p-text-color {
     @apply text-[#545567];
   }
+
+  .success-part-h2-items {
+    background: linear-gradient(to right, #136cb5, #49bbbd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    padding: 0;
+    font-family: var(--font-Buenos-Aires);
+  }
+
+  .success-part-p-items {
+    font-size: 18px;
+    font-family: var(--font-Buenos-Aires);
+  }
+
+  .temp-item {
+    @apply w-[calc((100% - 60px) / 3)] bg-white ;
+  }
+}
+
+@font-face {
+  font-family: "Buenos Aires";
+  src: url("../fonts/BuenosAires-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Buenos Aires";
+  src: url("../fonts/BuenosAires-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
