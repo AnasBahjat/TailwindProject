@@ -4,6 +4,7 @@
   --color-body-color: #f9f9fb;
   --color-header: #49bbbd;
   --color-header-text: #ffffff;
+  --color-blog-main: #9dccff;
   --font-Poppins: "Poppins";
   --h3-color: #595959;
   --font-Nunito-sans: "Nunito Sans";
@@ -24,6 +25,15 @@
 @layer components {
   .blog-header-nav {
     @apply text-[22px] font-Poppins tracking-[2%] text-[#5B5B5B];
+  }
+
+  .reading-blog-content {
+    /*@apply w-[(calc(100% - 228px) / 4)];*/
+    @apply w-full max-w-xs md:max-w-md;
+  }
+
+  .left-right-btns {
+    @apply bg-header/50 py-2.75 px-4 rounded hover:bg-header cursor-pointer duration-105;
   }
 }
 
