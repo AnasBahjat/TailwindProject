@@ -88,6 +88,14 @@
   .marketing-card-price-new {
     @apply font-Poppins font-bold text-[24px] tracking-[0.02em] text-[#49BBBD];
   }
+
+  .welcome-back-section {
+    @apply pt-12.5 pb-14.25 bg-[#9DCCFF]/30;
+  }
+
+  .welcome-back-section-container {
+    @apply container mx-auto px-30;
+  }
 }
 
 @layer utilities {
