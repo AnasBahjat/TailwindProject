@@ -5,6 +5,7 @@
   --color-header: #49bbbd;
   --color-header-text: #ffffff;
   --color-blog-main: #9dccff;
+  --color-main: #696984;
   --font-Poppins: "Poppins";
   --h3-color: #595959;
   --font-Nunito-sans: "Nunito Sans";
@@ -24,7 +25,7 @@
 
 @layer components {
   .blog-header-nav {
-    @apply text-[22px] font-Poppins tracking-[2%] text-[#5B5B5B];
+    @apply text-[22px] font-Poppins tracking-[0.02] text-[#5B5B5B];
   }
 
   .reading-blog-content {
@@ -34,6 +35,58 @@
 
   .left-right-btns {
     @apply bg-header/50 py-2.75 px-4 rounded hover:bg-header cursor-pointer duration-105;
+  }
+
+  .footer-items {
+    @apply font-Poppins tracking-[0.04em] text-[22px] text-[#B2B3CF];
+  }
+
+  .marketing-card {
+    @apply px-5 pt-5 pb-8 shadow-2xl rounded-[20px];
+  }
+
+  .marketing-card-img {
+    @apply w-full h-fit object-cover rounded-xl;
+  }
+
+  .marketing-card-design {
+    @apply flex items-center gap-2.5;
+  }
+
+  .marketing-design-duration {
+    @apply font-Poppins font-medium text-main text-[14px] leading-[1.8] tracking-[0.02em];
+  }
+
+  .marketing-card-title {
+    @apply text-[20px] md:text-[22px] font-Poppins font-medium mt-5 text-[#252641];
+  }
+
+  .marketing-card-body {
+    @apply font-Poppins text-[15px] md:text-[16px] leading-[1.8] tracking-[0.02em] text-main mt-5;
+  }
+
+  .marketing-card-owner-price {
+    @apply flex justify-between items-center mt-4.25;
+  }
+
+  .marketing-card-owner {
+    @apply flex items-center gap-3;
+  }
+
+  .marketing-card-owner-name {
+    @apply text-[18px] font-Poppins font-medium tracking-[0.02em];
+  }
+
+  .marketing-card-price {
+    @apply flex items-center gap-3.5;
+  }
+
+  .marketing-card-price-old {
+    @apply font-Poppins font-[18px] italic tracking-normal text-black/50 line-through;
+  }
+
+  .marketing-card-price-new {
+    @apply font-Poppins font-bold text-[24px] tracking-[0.02em] text-[#49BBBD];
   }
 }
 
