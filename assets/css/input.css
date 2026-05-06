@@ -94,7 +94,7 @@
   }
 
   .welcome-back-section-container {
-    @apply container mx-auto px-30;
+    @apply container flex flex-col items-center md:block mx-auto px-12 md:px-15 lg:px-30;
   }
 }
 
