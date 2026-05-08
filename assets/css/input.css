@@ -103,6 +103,10 @@
     @apply flex items-center;
   }
 
+  .course-details-hero{
+    background-image: url('../imgs/courseDetails/teacher-course.png')
+  }
+
   .row-center {
     @apply flex items-center justify-center;
   }
