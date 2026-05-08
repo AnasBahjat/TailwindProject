@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/output.css" />
   </head>
-  <body>
+  <body class="">
     <header class="bg-transparent py-7.5">
       <div
         class="container mx-auto px-6 md:px-12 lg:px-25 xl:px-30 flex items-center justify-between">
@@ -61,105 +61,291 @@
         </div>
       </div>
     </header>
+    <!--Header End-->
     <section>
       <div class="container mx-auto">
         <div
           class="course-details-hero bg-cover bg-center bg-no-repeat min-h-125"></div>
-      </div>
-      <div class="flex flex-col gap-15">
-        <div>
-          <div class="flex">
-            <button>Overview</button>
-            <button>Overview</button>
-            <button>Overview</button>
-            <button>Overview</button>
-          </div>
-        </div>
-        <div class="px-7.5 pt-7.5 py-23.25 bg-white">
-          <img
-            src="./assets/imgs/courseDetails/teacher-course.png"
-            alt="Tiny image for a girl who is explaining on the boards" />
-          <div class="flex items-center gap-5.5">
-            <p class="font-Poppins text-[45px] tracking-[0.02em]">$49.65</p>
-            <p class="ont-Poppins text-[28px] text-black/50 line-through">
-              $99.99
-            </p>
-            <p class="font-Poppins text-[28px] tracking-[0.02em]">50% Off</p>
-          </div>
-          <div class="py-10 flex justify-center">
-            <p class="font-Poppins text-[20px] tracking-[0.02em] text-header">
-              11 hour left at this price
-            </p>
-          </div>
-          <div>
-            <button class="bg-header text-white rounded-[12px] px-44 py-4.25">
-              Buy Now
-            </button>
-          </div>
-          <div class="border-t border-main py-7.5 mt-10">
-            <p class="font-Poppins font-semibold text-[30px] tracking-[0.02em]">
-              This Course included
-            </p>
-            <div class="flex flex-col gap-2 mt-3">
-              <div class="flex items-center gap-3">
-                <img
-                  src="./assets/imgs/courseDetails/money.svg"
-                  alt="Tiny money icon that is followed by money describtion" />
+        <div class="flex gap-15">
+          <div class="">
+            <div class="flex gap-12.5 mt-15">
+              <button
+                class="rounded-xl font-Poppins font-bold text-[20px] bg-black/30 px-12.5 py-3.5 hover:bg-header hover:text-white cursor-pointer">
+                Overview
+              </button>
+              <button
+                class="rounded-xl font-Poppins font-bold text-[20px] bg-black/30 px-12.5 py-3.5 hover:bg-header hover:text-white cursor-pointer">
+                Overview
+              </button>
+              <button
+                class="rounded-xl font-Poppins font-bold text-[20px] bg-black/30 px-12.5 py-3.5 hover:bg-header hover:text-white cursor-pointer">
+                Overview
+              </button>
+              <button
+                class="rounded-xl font-Poppins font-bold text-[20px] bg-black/30 px-12.5 py-3.5 hover:bg-header hover:text-white cursor-pointer">
+                Overview
+              </button>
+            </div>
+            <div class="bg-blog-main/40 py-12.5 px-12.5 mt-15 rounded-[20px]">
+              <div class="flex gap-12">
+                <div
+                  class="px-12 py-6.25 flex flex-col justify-center items-center gap-7 text-center bg-white rounded-[20px] shrink-0">
+                  <p
+                    class="font-Poppins text-[30px] font-semibold tracking-[0.02em] text-black/50 whitespace-nowrap">
+                    4 out of 5
+                  </p>
+                  <div class="flex">
+                    <img
+                      src="./assets/imgs/courseDetails/rate_star.png"
+                      alt="Rating start for specific course" />
+                    <img
+                      src="./assets/imgs/courseDetails/rate_star.png"
+                      alt="Rating start for specific course" />
+                    <img
+                      src="./assets/imgs/courseDetails/rate_star.png"
+                      alt="Rating start for specific course" />
+                    <img
+                      src="./assets/imgs/courseDetails/rate_star.png"
+                      alt="Rating start for specific course" />
+                    <img
+                      src="./assets/imgs/courseDetails/rate_star.png"
+                      alt="Rating start for specific course" />
+                  </div>
+                  <p
+                    class="font-Poppins text-[20px] tracking-[0.02em] text-black/50">
+                    Top Rating
+                  </p>
+                </div>
+                <div class="w-full flex flex-col gap-3">
+                  <div class="flex items-center gap-11.25">
+                    <p
+                      class="font-Poppins text-[20px] tracking-[0.02em] text-black/50 whitespace-nowrap shrink-0">
+                      5 stars
+                    </p>
+                    <div class="w-full h-2 bg-[#D9D9D9]">
+                      <div class="h-full bg-header w-[80%]"></div>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-11.25">
+                    <p
+                      class="font-Poppins text-[20px] tracking-[0.02em] text-black/50 whitespace-nowrap shrink-0">
+                      4 stars
+                    </p>
+                    <div class="w-full h-2 bg-[#D9D9D9]">
+                      <div class="h-full bg-header w-[80%]"></div>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-11.25">
+                    <p
+                      class="font-Poppins text-[20px] tracking-[0.02em] text-black/50 whitespace-nowrap shrink-0">
+                      3 stars
+                    </p>
+                    <div class="w-full h-2 bg-[#D9D9D9]">
+                      <div class="h-full bg-header w-[80%]"></div>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-11.25">
+                    <p
+                      class="font-Poppins text-[20px] tracking-[0.02em] text-black/50 whitespace-nowrap shrink-0">
+                      2 stars
+                    </p>
+                    <div class="w-full h-2 bg-[#D9D9D9]">
+                      <div class="h-full bg-header w-[80%]"></div>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-11.25">
+                    <p
+                      class="font-Poppins text-[20px] tracking-[0.02em] text-black/50 whitespace-nowrap shrink-0">
+                      1 stars
+                    </p>
+                    <div class="w-full h-2 bg-[#D9D9D9]">
+                      <div class="h-full bg-header w-[80%]"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col mt-16.5 py-6">
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/imgs/courseDetails/profile-page-details.png"
+                    alt="Profile image for who rated and added a comment for specific course" />
+                  <div class="flex flex-col gap-1.5">
+                    <p
+                      class="font-Poppins text-[18px] font-medium tracking-[0.02em]">
+                      Lina
+                    </p>
+                    <div class="flex">
+                      <img
+                        src="./assets/imgs/courseDetails/rate_star.png"
+                        alt="Rating star py user for the course" />
+                      <img
+                        src="./assets/imgs/courseDetails/rate_star.png"
+                        alt="Rating star py user for the course" />
+                      <img
+                        src="./assets/imgs/courseDetails/rate_star.png"
+                        alt="Rating star py user for the course" />
+                      <img
+                        src="./assets/imgs/courseDetails/rate_star.png"
+                        alt="Rating star py user for the course" />
+                      <img
+                        src="./assets/imgs/courseDetails/rate_star.png"
+                        alt="Rating star py user for the course" />
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-2.5 ml-auto">
+                  <img
+                    src="./assets/imgs/courseDetails/clock.svg"
+                    alt="From Period :" />
+                  <p
+                    class="font-Poppins text-[14px] text-main font-medium tracking-[0.02em] leading-1.8">
+                    3 Month
+                  </p>
+                </div>
                 <p
-                  class="font-Poppins font-semibold text-[14px] text-black/50 tracking-[0.02em]">
-                  Money Back Guarantee
+                  class="font-Poppins text-main text-[20px] tracking-[0.02em] leading-1.8 mt-4.25">
+                  Class, launched less than a year ago by Blackboard co-founder
+                  Michael Chasen, integrates exclusively...
                 </p>
               </div>
-              <div class="flex items-center gap-3">
-                <img
-                  src="./assets/imgs/courseDetails/camera.svg"
-                  alt="Tiny camera icon that is followed by  describtion" />
+              <div class="flex flex-col border-t border-main py-6">
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/imgs/courseDetails/profile-page-details.png"
+                    alt="Profile image for who rated and added a comment for specific course" />
+                  <div class="flex flex-col gap-1.5">
+                    <p
+                      class="font-Poppins text-[18px] font-medium tracking-[0.02em]">
+                      Lina
+                    </p>
+                    <div class="flex">
+                      <img
+                        src="./assets/imgs/courseDetails/rate_star.png"
+                        alt="Rating star py user for the course" />
+                      <img
+                        src="./assets/imgs/courseDetails/rate_star.png"
+                        alt="Rating star py user for the course" />
+                      <img
+                        src="./assets/imgs/courseDetails/rate_star.png"
+                        alt="Rating star py user for the course" />
+                      <img
+                        src="./assets/imgs/courseDetails/rate_star.png"
+                        alt="Rating star py user for the course" />
+                      <img
+                        src="./assets/imgs/courseDetails/rate_star.png"
+                        alt="Rating star py user for the course" />
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-2.5 ml-auto">
+                  <img
+                    src="./assets/imgs/courseDetails/clock.svg"
+                    alt="From Period :" />
+                  <p
+                    class="font-Poppins text-[14px] text-main font-medium tracking-[0.02em] leading-1.8">
+                    3 Month
+                  </p>
+                </div>
                 <p
-                  class="font-Poppins font-semibold text-[14px] text-black/50 tracking-[0.02em]">
-                  Access on all devices
-                </p>
-              </div>
-              <div class="flex items-center gap-3">
-                <img
-                  src="./assets/imgs/courseDetails/document.svg"
-                  alt="Tiny document icon that is followed by describtion" />
-                <p
-                  class="font-Poppins font-semibold text-[14px] text-black/50 tracking-[0.02em]">
-                  Certification of completion
-                </p>
-              </div>
-              <div class="flex items-center gap-3">
-                <img
-                  src="./assets/imgs/courseDetails/chart.svg"
-                  alt="Tiny chart icon that is followed by describtion" />
-                <p
-                  class="font-Poppins font-semibold text-[14px] text-black/50 tracking-[0.02em]">
-                  32 Modules
+                  class="font-Poppins text-main text-[20px] tracking-[0.02em] leading-1.8 mt-4.25">
+                  Class, launched less than a year ago by Blackboard co-founder
+                  Michael Chasen, integrates exclusively...
                 </p>
               </div>
             </div>
           </div>
-          <div class="border-t border-main py-7.5 mt-10">
-            <p class="font-Poppins font-semibold text-[30px] tracking-[0.02em]">
-              Training 5 or more people
-            </p>
-            <p
-              class="font-Poppins text-[14px] tracking-[0.02em] leading-1.8 text-main">
-              Class, launched less than a year ago by Blackboard co-founder
-              Michael Chasen, integrates exclusively...
-            </p>
-          </div>
-          <div class="border-t border-main py-7.5 mt-10">
-            <p class="font-Poppins font-semibold text-[30px] tracking-[0.02em]">
-              Share this course
-            </p>
-            <div class="flex gap-6.25 mt-13.25">
-              <img src="./assets/imgs/courseDetails/twitter.svg" alt="" />
-              <img src="./assets/imgs/courseDetails/facebook.svg" alt="" />
-              <img src="./assets/imgs/courseDetails/youtube.svg" alt="" />
-              <img src="./assets/imgs/courseDetails/instagram.svg" alt="" />
-              <img src="./assets/imgs/courseDetails/telegram.svg" alt="" />
-              <img src="./assets/imgs/courseDetails/whatsapp.svg" alt="" />
+          <div class="px-7.5 pt-7.5 py-23.25 w-fit rounded-[20px]">
+            <img
+              src="./assets/imgs/courseDetails/small-girl-lesson.png"
+              alt="Tiny image for a girl who is explaining on the boards" />
+            <div class="flex items-center gap-5.5">
+              <p class="font-Poppins text-[45px] tracking-[0.02em]">$49.65</p>
+              <p class="ont-Poppins text-[28px] text-black/50 line-through">
+                $99.99
+              </p>
+              <p class="font-Poppins text-[28px] tracking-[0.02em text-main">
+                50% Off
+              </p>
+            </div>
+            <div class="py-10 flex justify-center">
+              <p class="font-Poppins text-[20px] tracking-[0.02em] text-header">
+                11 hour left at this price
+              </p>
+            </div>
+            <div>
+              <button
+                class="bg-header text-[20px] font-Poppins font-bold text-white rounded-[12px] px-44 py-4.25 whitespace-nowrap">
+                Buy Now
+              </button>
+            </div>
+            <div class="border-t border-main py-7.5 mt-10">
+              <p
+                class="font-Poppins font-semibold text-[30px] tracking-[0.02em]">
+                This Course included
+              </p>
+              <div class="flex flex-col gap-2 mt-7.5">
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/imgs/courseDetails/money.svg"
+                    alt="Tiny money icon that is followed by money describtion" />
+                  <p
+                    class="font-Poppins font-semibold text-[14px] text-black/50 tracking-[0.02em]">
+                    Money Back Guarantee
+                  </p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/imgs/courseDetails/camera.svg"
+                    alt="Tiny camera icon that is followed by  describtion" />
+                  <p
+                    class="font-Poppins font-semibold text-[14px] text-black/50 tracking-[0.02em]">
+                    Access on all devices
+                  </p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/imgs/courseDetails/document.svg"
+                    alt="Tiny document icon that is followed by describtion" />
+                  <p
+                    class="font-Poppins font-semibold text-[14px] text-black/50 tracking-[0.02em]">
+                    Certification of completion
+                  </p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/imgs/courseDetails/chart.svg"
+                    alt="Tiny chart icon that is followed by describtion" />
+                  <p
+                    class="font-Poppins font-semibold text-[14px] text-black/50 tracking-[0.02em]">
+                    32 Modules
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="border-t border-main py-7.5 mt-10">
+              <p
+                class="font-Poppins font-semibold text-[30px] tracking-[0.02em]">
+                Training 5 or more people
+              </p>
+              <p
+                class="font-Poppins text-[14px] tracking-[0.02em] leading-1.8 text-main mt-7.5">
+                Class, launched less than a year ago by Blackboard co-founder
+                Michael Chasen, integrates exclusively...
+              </p>
+            </div>
+            <div class="border-t border-main py-7.5 mt-10">
+              <p
+                class="font-Poppins font-semibold text-[30px] tracking-[0.02em]">
+                Share this course
+              </p>
+              <div class="flex gap-6.25 mt-13.25">
+                <img src="./assets/imgs/courseDetails/twitter.svg" alt="" />
+                <img src="./assets/imgs/courseDetails/facebook.svg" alt="" />
+                <img src="./assets/imgs/courseDetails/youtube.svg" alt="" />
+                <img src="./assets/imgs/courseDetails/instagram.svg" alt="" />
+                <img src="./assets/imgs/courseDetails/telegram.svg" alt="" />
+                <img src="./assets/imgs/courseDetails/whatsapp.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
