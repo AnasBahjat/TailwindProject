@@ -103,8 +103,15 @@
     @apply flex items-center;
   }
 
-  .course-details-hero{
-    background-image: url('../imgs/courseDetails/teacher-course.png')
+  .course-details-hero {
+    background-image: url("../imgs/courseDetails/teacher-course.png");
+  }
+
+  .top-offers-section-bg {
+    background-image: url("../imgs/courseDetails/top-offers-bg.png");
+    background-size: cover;
+    background-position: 90% center;
+    background-repeat: no-repeat;
   }
 
   .row-center {
