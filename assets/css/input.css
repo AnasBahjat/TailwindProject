@@ -114,6 +114,20 @@
     background-repeat: no-repeat;
   }
 
+  .landing-page-smiling-girl {
+    background-image: url("../imgs/landing/smiling-girl.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .landing-page-friend-group {
+    background-image: url("../imgs/landing/group-of-firends.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .row-center {
     @apply flex items-center justify-center;
   }
