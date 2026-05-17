@@ -8,7 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <header class="bg-header py-7.5 max-h-270 overflow-hidden rounded-b-[35%]">
+    <header
+      class="bg-header py-7.5 h-fit lg:max-h-190 xl:max-h-270 overflow-hidden lg:rounded-b-[35%]"
+    >
       <div class="container mx-auto px-6 md:px-12 lg:px-16">
         <div class="flex items-center justify-between">
           <div class="logo">
@@ -54,33 +56,37 @@
 
             <div class="flex items-center justify-center gap-6.5">
               <button
-                class="py-3.5 xl:px-13.5 bg-white text-main hover:bg-header/50 hover:text-white rounded-[80px] hover:cursor-pointer font-Poppins font-medium text-[16px] lg:text-[18px] xl:text-[22px] tracking-[0.02em]"
+                class="py-3.5 px-6 xl:px-13.5 bg-white text-main hover:bg-header/50 hover:text-white rounded-[80px] hover:cursor-pointer font-Poppins font-medium text-[16px] lg:text-[18px] xl:text-[22px] tracking-[0.02em]"
               >
                 Login
               </button>
               <button
-                class="py-3.5 lg:px-4 xl:px-10 bg-white text-main hover:bg-header/50 hover:text-white rounded-[80px] hover:cursor-pointer font-Poppins font-medium text-[16px] lg:text-[18px] xl:text-[22px] tracking-[0.02em]"
+                class="py-3.5 px-4 xl:px-10 bg-white text-main hover:bg-header/50 hover:text-white rounded-[80px] hover:cursor-pointer font-Poppins font-medium text-[16px] lg:text-[18px] xl:text-[22px] tracking-[0.02em]"
               >
                 Sign Up
               </button>
             </div>
           </div>
         </div>
-        <div class="mt-27.75 grid grid-cols-1 lg:grid-cols-2 gap-y-10">
+        <div
+          class="lg:mt-15 xl:mt-27.75 grid grid-cols-1 lg:grid-cols-2 gap-y-10"
+        >
           <div class="flex flex-col gap-8.5 pt-27.75">
-            <h3 class="font-Poppins text-[54px] font-bold text-white pr-15.5">
+            <h3
+              class="font-Poppins text-[28px] lg:text-[32px] xl:text-[54px] font-bold text-white pr-15.5"
+            >
               <span class="text-[#F48C06]">Studying</span> Online is now much
               easier
             </h3>
             <p
-              class="pr-39.5 font-Nunito-sans text-[24px] leading-1.6 text-white"
+              class="pr-39.5 font-Nunito-sans text-[20px] xl:text-[24px] leading-1.6 text-white"
             >
               TOTC is an interesting platform that will teach you in more an
               interactive way
             </p>
-            <div class="flex items-center gap-10">
+            <div class="flex items-center gap-5 xl:gap-10">
               <button
-                class="font-Poppins text-[24px] font-semibold bg-white text-header px-9.5 py-5.5 rounded-[80px] hover:bg-header/30 hover:text-white cursor-pointer"
+                class="font-Poppins text-[18px] xl:text-[24px] font-semibold bg-white text-header px-4 py-2 xl:px-9.5 xl:py-5.5 rounded-[80px] hover:bg-header/30 hover:text-white cursor-pointer"
               >
                 Join For Free
               </button>
@@ -91,12 +97,12 @@
                   alt="Play Video image"
                 />
               </div>
-              <p class="font-Poppins text-[24px] text-[#252641]">
+              <p class="font-Poppins text-[18px] xl:text-[24px] text-[#252641]">
                 Watch how it works
               </p>
             </div>
           </div>
-          <div class="relative ml-20">
+          <div class="relative lg:ml-20 md:mx-10 lg:mx-0">
             <img
               class=""
               src="./assets/imgs/landing/girl-thinkin-header.png"
@@ -108,7 +114,7 @@
               alt="Temp Icon"
             />
             <div
-              class="absolute -left-40 top-[20%] top flex gap-8 py-3.75 px-7 bg-white/70 rounded-[20px] w-fit items-center"
+              class="absolute -left-20 xl:-left-40 top-[20%] top flex gap-4 xl:gap-8 py-2.5 px-4 xl:py-3.75 xl:px-7 bg-white/70 rounded-[20px] w-fit items-center"
             >
               <img
                 src="./assets/imgs/landing/calender.png"
@@ -116,19 +122,19 @@
               />
               <div class="flex flex-col">
                 <p
-                  class="font-Nunito-sans text-[24px] font-bold leading-1.8 tracking-[0.02em] text-main"
+                  class="font-Nunito-sans text-[18px] xl:text-[24px] font-bold leading-1.8 tracking-[0.02em] text-main"
                 >
                   250k
                 </p>
                 <p
-                  class="font-Nunito-sans text-[20px] font-semibold leading-1.8 tracking-[0.02em] text-main"
+                  class="font-Nunito-sans text-[15px] xl:text-[20px] font-semibold leading-1.8 tracking-[0.02em] text-main"
                 >
                   Assisted Student
                 </p>
               </div>
             </div>
             <div
-              class="absolute top-[60%] -left-40 bg-white/70 rounded-[20px] w-fit py-5 px-7 flex flex-col gap-6"
+              class="absolute top-[60%] -left-20 xl:-left-40 bg-white/70 rounded-[20px] w-fit px-2 py-3 xl:py-5 xl:px-7 flex flex-col gap-2 xl:gap-6"
             >
               <div class="flex gap-5.75">
                 <img
@@ -137,12 +143,12 @@
                 />
                 <div class="flex flex-col">
                   <p
-                    class="font-Nunito-sans font-bold text-[24px] tracking-[0.02em] leading-1.8 text-[#595959]"
+                    class="font-Nunito-sans font-bold text-[18px] xl:text-[24px] tracking-[0.02em] leading-1.8 text-[#595959]"
                   >
                     User Experience Class
                   </p>
                   <p
-                    class="font-Nunito-sans font-semibold text-[20px] tracking-[0.02em] leading-1.8 text-main"
+                    class="font-Nunito-sans font-semibold text-[16px] xl:text-[20px] tracking-[0.02em] leading-1.8 text-main"
                   >
                     Today at 12.00 PM
                   </p>
@@ -157,7 +163,7 @@
               </div>
             </div>
             <div
-              class="absolute -right-15 top-[40%] flex gap-6 px-6.5 py-5 bg-white/70 w-fit rounded-[20px]"
+              class="absolute -right-15 top-[40%] flex gap-4 px-2.5 py-3 xl:gap-6 xl:px-6.5 xl:py-5 bg-white/70 w-fit rounded-[20px]"
             >
               <img
                 src="./assets/imgs/landing/email-icon.svg"
@@ -165,12 +171,12 @@
               />
               <div>
                 <p
-                  class="font-Nunito-sans text-[24px] font-bold tracking-[0.02em] leading-1.8 text-[#595959]"
+                  class="font-Nunito-sans text-[18px] xl:text-[24px] font-bold tracking-[0.02em] leading-1.8 text-[#595959]"
                 >
                   Congratulations
                 </p>
                 <p
-                  class="font-Nunito-sans text-[20px] font-semibold tracking-[0.02em] leading-1.8 text-main"
+                  class="font-Nunito-sans text-[16px] xl:text-[20px] font-semibold tracking-[0.02em] leading-1.8 text-main"
                 >
                   Your admission completed
                 </p>
